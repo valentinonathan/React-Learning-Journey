@@ -3,7 +3,9 @@ import Card from './Card.jsx'
 import Learning_Chapter from './Learning_Chapter.jsx'
 import Button from './Button/Button.jsx'
 import Button1 from './Button1.jsx'
-import Student from './Student.jsx'
+import Student from './Student/Student.jsx'
+import UserGreeting from './UserGreeting.jsx'
+import List from './List.jsx'
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
     <Button1 />
     <Learning_Chapter chapter={3}/>
     <Student name="Valentino" age={18} isStudent={true}/>
+    <Student name="Student2" age={21} isStudent={true}/>
+    <Student />
+    <Learning_Chapter chapter={4}/>
+    <UserGreeting isLoggedIn={true} username="Valentino"/>
+    <Learning_Chapter chapter={5} />
+    <List />
     </>
   );
 }
