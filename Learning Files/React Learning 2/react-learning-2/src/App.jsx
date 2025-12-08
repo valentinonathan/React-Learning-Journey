@@ -6,6 +6,9 @@ import Button1 from './Button1.jsx'
 import Student from './Student/Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
+import ProfilePicture from './ProfilePicture.jsx'
+import HookPractice from './HookPractice.jsx'
+import Form from './Form.jsx'
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
     <Card />
     <Card />
     <Learning_Chapter chapter={2}/>
-    <Button />
+    <Button isChapter2 = {true}/>
     <Button1 />
     <Learning_Chapter chapter={3}/>
     <Student name="Valentino" age={18} isStudent={true}/>
@@ -24,6 +27,13 @@ function App() {
     <UserGreeting isLoggedIn={true} username="Valentino"/>
     <Learning_Chapter chapter={5} />
     <List />
+    <Learning_Chapter chapter={6}/>
+    <Button isChapter2= {false}/>
+    <ProfilePicture />
+    <Learning_Chapter chapter={7} />
+    <HookPractice />
+    <Learning_Chapter chapter={8} />
+    <Form />
     </>
   );
 }
