@@ -12,6 +12,7 @@ import Form from './Form.jsx'
 import Car from './Car.jsx'
 import Food from './Food.jsx'
 import ListOfCar from './ListOfCar.jsx'
+import Effect from './Effect.jsx'
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
     <Food />
     <Learning_Chapter chapter={11} />
     <ListOfCar />
+    <Learning_Chapter chapter={12} />
+    <Effect />
     </>
   );
 }
