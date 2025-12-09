@@ -9,6 +9,9 @@ import List from './List.jsx'
 import ProfilePicture from './ProfilePicture.jsx'
 import HookPractice from './HookPractice.jsx'
 import Form from './Form.jsx'
+import Car from './Car.jsx'
+import Food from './Food.jsx'
+import ListOfCar from './ListOfCar.jsx'
 
 function App() {
   return (
@@ -34,6 +37,12 @@ function App() {
     <HookPractice />
     <Learning_Chapter chapter={8} />
     <Form />
+    <Learning_Chapter chapter={9} />
+    <Car />
+    <Learning_Chapter chapter={10} />
+    <Food />
+    <Learning_Chapter chapter={11} />
+    <ListOfCar />
     </>
   );
 }
