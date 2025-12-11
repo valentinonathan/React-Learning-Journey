@@ -1,10 +1,26 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route} from 'react-router-dom' 
-
+import './index.css'
+import './App.css'
+import ProjectCards from './ProjectCards/ProjectCards.jsx';
 
 function App() {
   return (
-    <p>Test</p>
+    <>
+    <h1>Valentino React Mini Projects</h1>
+    <p>Mini projects that I built in React for learning purposes</p>
+    <ProjectCards 
+      image="./assets/react.svg" 
+      projectTitle="Counter" 
+      projectDescription="This is a counter app" />
+      <ProjectCards 
+      image="./assets/react.svg" 
+      projectTitle="Counter" 
+      projectDescription="This is a counter app" />
+      <ProjectCards 
+      image="./assets/react.svg" 
+      projectTitle="Counter" 
+      projectDescription="This is a counter app" />
+    </>
   );
 }
 
