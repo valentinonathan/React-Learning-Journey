@@ -13,6 +13,12 @@ import Car from './Car.jsx'
 import Food from './Food.jsx'
 import ListOfCar from './ListOfCar.jsx'
 import Effect from './Effect.jsx'
+import ComponentA from './ComponentA.jsx'
+import ComponentB from './ComponentB.jsx'
+import ComponentC from './ComponentC.jsx'
+import ComponentD from './ComponentD.jsx'
+import Useref from './Useref.jsx'
+
 
 function App() {
   return (
@@ -46,6 +52,10 @@ function App() {
     <ListOfCar />
     <Learning_Chapter chapter={12} />
     <Effect />
+    <Learning_Chapter chapter={13} />
+    <ComponentA />
+    <Learning_Chapter chapter={14} />
+    <Useref />
     </>
   );
 }
