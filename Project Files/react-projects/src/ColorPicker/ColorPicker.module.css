@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 }   
-.root h1, p{
+.root h1, .root p{
     margin-top: 0;
     font-family: "Pixelify Sans";
 }
