@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import App from './pages/App.jsx'
 import './index.css'
-import ColorPicker from './ColorPicker/ColorPicker.jsx'
-import ToDoList from './ToDoList.jsx'
-import DigitalClock from './DigitalClock.jsx'
-import Stopwatch from './Stopwatch.jsx'
+import ColorPicker from './pages/ColorPicker/ColorPicker.jsx'
+import ToDoList from './pages/ToDoList/ToDoList.jsx'
+import DigitalClock from './pages/DigitalClock/DigitalClock.jsx'
+import Stopwatch from './pages/Stopwatch/Stopwatch.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 

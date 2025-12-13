@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './index.css'
 import './App.css'
-import ProjectCards from './ProjectCards/ProjectCards.jsx';
+import ProjectCards from './Components/ProjectCards/ProjectCards.jsx';
 
 function App() {
   return (
