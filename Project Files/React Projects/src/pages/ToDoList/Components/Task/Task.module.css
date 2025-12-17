@@ -8,10 +8,16 @@
     padding: 13px 10px;
     border-radius: 10px;
 }
-.checkBox{
+.checkBoxFalse{
     width: 20px;
     height: 20px;
     background-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.checkBoxTrue{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(123, 100%, 50%);
     border-radius: 5px;
 }
 .inputTask{
@@ -19,4 +25,7 @@
     border: none;
     color: white;
     min-width: 400px;
+}
+.inputTask:focus{
+    outline: none;
 }

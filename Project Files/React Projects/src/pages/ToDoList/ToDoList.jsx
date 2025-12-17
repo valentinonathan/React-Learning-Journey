@@ -25,6 +25,12 @@ function ToDoList() {
         })
     }
     function handleTaskStatus(status, id){
+        setTasks(t => {
+            let newT = t.map((individualTask) => individualTask.id === id
+                                        ? {...individualTask, status:status}
+                                        : individualTask);
+            return newT;
+        })
     }
 
     return(
@@ -36,7 +42,7 @@ function ToDoList() {
             <button className={styles.button}>Delete Task</button>
         </div>
         <div className={styles.taskContainer}>
-            {tasks.map((task) => <Task key={task.id} id={task.id} callback1={handleEnterTask}/>)}
+            {tasks.map((task) => <Task key={task.id} id={task.id} status={task.status} text={task.text} callback1={handleEnterTask} callback2={handleTaskStatus}/>)}
         </div>
         </>
     );
