@@ -5,7 +5,7 @@ function Task(props) {
     const [taskText, setTaskText] = useState("");
     function handleEnterTaskModule(event){
         if (event.key === 'Enter') {
-            props.callback(event.target.value, props.id);
+            props.callback1(event.target.value, props.id);
         }
     }
     return(

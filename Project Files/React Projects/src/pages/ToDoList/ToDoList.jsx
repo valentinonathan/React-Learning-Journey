@@ -7,7 +7,7 @@ function ToDoList() {
     const [tasks, setTasks] = useState([]);
 
     function handleAddTask(){
-        setTasks(t => [...t, {text: "", id: crypto.randomUUID()}]);
+        setTasks(t => [...t, {text: "", id: crypto.randomUUID(), status:false}]);
     }
     function handleEnterTask(text, id) {
         setTasks(t => {
@@ -24,6 +24,8 @@ function ToDoList() {
             return newT;
         })
     }
+    function handleTaskStatus(status, id){
+    }
 
     return(
         <>
@@ -34,7 +36,7 @@ function ToDoList() {
             <button className={styles.button}>Delete Task</button>
         </div>
         <div className={styles.taskContainer}>
-            {tasks.map((task) => <Task key={task.id} id={task.id} callback={handleEnterTask}/>)}
+            {tasks.map((task) => <Task key={task.id} id={task.id} callback1={handleEnterTask}/>)}
         </div>
         </>
     );
