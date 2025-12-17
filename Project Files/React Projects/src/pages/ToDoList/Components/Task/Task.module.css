@@ -1,0 +1,22 @@
+.taskBox{
+    background-color: hsla(0, 0%, 100%, 0.367);
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10px;
+    border-radius: 10px;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+    background-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.inputTask{
+    background-color: hsla(0, 0%, 0%, 0);
+    border: none;
+    color: white;
+    min-width: 400px;
+}

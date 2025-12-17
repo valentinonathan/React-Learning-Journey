@@ -7,14 +7,18 @@ function AddRemoveCards() {
     const [cards, setCards] = useState([]);
 
     function addCardHandler(event){
-        setCards(c => [...c, {id: crypto.randomUUID()}]);
+        setCards(c => [...c, crypto.randomUUID()]);
+    }
+
+    function removeCardHandler(i){
+        setCards(c => c.filter((card) => card !== i));
     }
 
     return (
         <>
             <button onClick={addCardHandler} className={styles.addTask}>Add Card</button>
             <div className= {styles.cardContainer}>
-                {cards.map(card => <Card key={card.id}/>)}
+                {cards.map((card) => <Card key={card} onRemove={() => removeCardHandler(card)}/>)}
             </div>
         </>
     );
