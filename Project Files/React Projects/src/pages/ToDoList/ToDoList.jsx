@@ -32,6 +32,9 @@ function ToDoList() {
             return newT;
         })
     }
+    function handleDisplayTask() {
+        alert(tasks.map(task => task.text));
+    }
 
     return(
         <>
@@ -40,6 +43,7 @@ function ToDoList() {
             <button className={styles.button} onClick={handleAddTask}>Add Task</button>
             <button className={styles.button}>Select Task</button>
             <button className={styles.button}>Delete Task</button>
+            <button className={styles.button} onClick={handleDisplayTask}>Display Task</button>
         </div>
         <div className={styles.taskContainer}>
             {tasks.map((task) => <Task key={task.id} id={task.id} status={task.status} text={task.text} callback1={handleEnterTask} callback2={handleTaskStatus}/>)}
