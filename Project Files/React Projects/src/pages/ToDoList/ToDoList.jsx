@@ -51,6 +51,9 @@ function ToDoList() {
             return newT;
         });
     }
+    function handleDeleteTask() {
+        setTasks(t => t.filter(individualTask => !individualTask.selectStatus));
+    }
 
     return(
         <>
@@ -58,7 +61,7 @@ function ToDoList() {
         <div className={styles.buttonContainer}>
             <button className={styles.button} onClick={handleAddTask}>Add Task</button>
             <button className={styles.button} onClick={handleSelectTask}>Select Task</button>
-            <button className={styles.button}>Delete Task</button>
+            <button className={styles.button} onClick={handleDeleteTask}>Delete Task</button>
             <button className={styles.button} onClick={handleDisplayTask}>Display Task</button>
         </div>
         <div className={styles.taskContainer}>
