@@ -6,17 +6,14 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import AddRemoveCards from './pages/AddRemoveCards/AddRemoveCards.jsx'
 import ToDoList from './pages/ToDoList/ToDoList.jsx'
 import ToDoListImproved from './pages/ToDoListImproved/ToDoListImproved.jsx'
+import PikachuAPI from './pages/pikachuAPI/pikachuAPI.jsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/add-remove-cards", element: <AddRemoveCards />}, 
   {path: "/to-do-list", element: <ToDoList />}, 
-  {path: "/to-do-list-improved", element: <ToDoListImproved />}, 
-  {path: "modal-dialog", element: <App />}, 
-  {path: "/fetch-display-data", element: <App />},
-  {path: "/form-validation", element: <App />},
-  {path: "theme-toggle", element: <App />},
-  {path: "search-with-debounce", element: <App />}
+  {path: "/to-do-list-improved", element: <ToDoListImproved />},
+  {path: "/PikachuAPI", element: <PikachuAPI />}
 ]);
 
 createRoot(document.getElementById('root')).render(

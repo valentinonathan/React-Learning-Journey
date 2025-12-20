@@ -1,0 +1,11 @@
+.root{
+    margin:0;
+    display: flex;
+    gap: 10px;
+}
+.pokemonInput{
+    min-width: 200px;
+}
+.pokemonButton{
+    
+}
