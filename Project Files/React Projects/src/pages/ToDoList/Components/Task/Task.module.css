@@ -20,6 +20,19 @@
     background-color: hsl(123, 100%, 50%);
     border-radius: 5px;
 }
+.selectBoxFalse{
+    width: 18px;
+    height: 18px;
+    border: solid 2px;
+    border-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.selectBoxTrue{
+    width: 20px;
+    height: 20px;
+    background-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
 .inputTask{
     background-color: hsla(0, 0%, 0%, 0);
     border: none;
