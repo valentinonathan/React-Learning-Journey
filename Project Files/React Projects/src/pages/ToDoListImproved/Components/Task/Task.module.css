@@ -1,0 +1,44 @@
+.taskBox{
+    background-color: hsla(0, 0%, 100%, 0.367);
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10px;
+    border-radius: 10px;
+}
+.checkBoxFalse{
+    width: 20px;
+    height: 20px;
+    background-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.checkBoxTrue{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(123, 100%, 50%);
+    border-radius: 5px;
+}
+.selectBoxFalse{
+    width: 18px;
+    height: 18px;
+    border: solid 2px;
+    border-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.selectBoxTrue{
+    width: 20px;
+    height: 20px;
+    background-color: hsla(0, 0%, 100%, 0.363);
+    border-radius: 5px;
+}
+.inputTask{
+    background-color: hsla(0, 0%, 0%, 0);
+    border: none;
+    color: white;
+    min-width: 400px;
+}
+.inputTask:focus{
+    outline: none;
+}
