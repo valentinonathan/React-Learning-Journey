@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   {path: "/add-remove-cards", element: <AddRemoveCards />}, 
   {path: "/to-do-list", element: <ToDoList />}, 
   {path: "/to-do-list-improved", element: <ToDoListImproved />},
-  {path: "/PikachuAPI", element: <PikachuAPI />}
+  {path: "/pikachu-api", element: <PikachuAPI />}
 ]);
 
 createRoot(document.getElementById('root')).render(

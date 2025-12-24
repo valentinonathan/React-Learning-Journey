@@ -1,5 +1,9 @@
 :root {
   background: linear-gradient(135deg, #667eea, #764ba2);
+  background-repeat: repeat;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  margin:0;
+  border:none;
+  overscroll-behavior: none;
 }
