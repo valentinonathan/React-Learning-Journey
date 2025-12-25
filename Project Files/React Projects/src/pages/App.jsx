@@ -12,6 +12,7 @@ function App() {
         <li><Link to={'./add-remove-cards'} className={styles.link}>Add Remove Cards</Link></li>
         <li><Link to={'./to-do-list'} className={styles.link}>To Do List</Link></li>
         <li><Link to={'./pikachu-api'} className={styles.link}>Pikachu Image Generator</Link></li>
+        <li><Link to={'./login-form'} className={styles.link}>Login Form</Link></li>
       </ul>
     </div>
   )
