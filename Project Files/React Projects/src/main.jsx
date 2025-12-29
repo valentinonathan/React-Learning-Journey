@@ -9,6 +9,7 @@ import ToDoListImproved from './pages/ToDoListImproved/ToDoListImproved.jsx'
 import PikachuAPI from './pages/pikachuAPI/pikachuAPI.jsx'
 import LoginForm from './pages/LoginForm/LoginForm.jsx'
 import CreateAccount from './pages/LoginForm/CreateAccount.jsx'
+import LoginFormTailwind from './pages/LoginFormTailwind/LoginFormTailwind.jsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
   {path: "/to-do-list-improved", element: <ToDoListImproved />},
   {path: "/pikachu-api", element: <PikachuAPI />},
   {path:"/login-form", element: <LoginForm />},
-  {path: "/login-form/create-account", element: <CreateAccount />}
+  {path: "/login-form/create-account", element: <CreateAccount />},
+  {path: "/login-form-tailwind", element: <LoginFormTailwind />}
 ]);
 
 createRoot(document.getElementById('root')).render(
